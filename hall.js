@@ -25,7 +25,7 @@ const hallSchema = new mongoose.Schema({
     required: false
   },
   numRoomsNeeded: { type: Number, default: 0 },
-  selectedRooms: { type: [Number], default: [] }
+  selectedRooms: [{ type: Date, type:Array }]
 });
 
 const BHall = mongoose.model('Hall', hallSchema);
